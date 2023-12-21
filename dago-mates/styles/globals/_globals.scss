@@ -6,4 +6,27 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    
+}
+
+.boton{
+    width: 100%;
+    text-decoration: none;
+    background-color: mediumpurple;
+    padding: 0.5em;
+    font-style: italic;
+    font-weight: 700;
+    border: 1px black solid;
+    display: inline-block;
+    transition: 1s;
+    a{
+        color: white;
+    }
+}
+
+body{
+    background-color: rgba(2, 0, 121, 0.651)
+}
 

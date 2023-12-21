@@ -1,0 +1,42 @@
+[
+    {
+        "imagen": "/imgs/termo-stanley.jpg",
+        "id": "1",
+        "nombre": "Termo Stanley",
+        "categoria": "termos",
+        "precio": 15000,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi, est accusantium quidem ut, quisquam praesentium quibusdam culpa fugiat possimus consectetur hic mollitia perferendis, vero inventore cumque! Voluptatem, animi veritatis!"
+    },
+    {
+        "imagen": "/imgs/termo-acero.jpg",
+        "id": "2",
+        "nombre": "Termo Acero Inox",
+        "categoria": "termos",
+        "precio": 7000,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi, est accusantium quidem ut, quisquam praesentium quibusdam culpa fugiat possimus consectetur hic mollitia perferendis, vero inventore cumque! Voluptatem, animi veritatis!"
+    },
+    {
+        "imagen": "/imgs/mate-camionero.jpg",
+        "id": "3",
+        "nombre": "Mate Camionero",
+        "categoria": "mates",
+        "precio": 15000,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi, est accusantium quidem ut, quisquam praesentium quibusdam culpa fugiat possimus consectetur hic mollitia perferendis, vero inventore cumque! Voluptatem, animi veritatis!"
+    },
+    {
+        "imagen": "/imgs/mate-imperial.jpg",
+        "id": "4",
+        "nombre": "Mate Imperial",
+        "categoria": "mates",
+        "precio": 7000,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi, est accusantium quidem ut, quisquam praesentium quibusdam culpa fugiat possimus consectetur hic mollitia perferendis, vero inventore cumque! Voluptatem, animi veritatis!"
+    },
+    {
+        "imagen": "/imgs/mate-personalizado.webp",
+        "id": "5",
+        "nombre": "Mate Personalizado",
+        "categoria": "mates",
+        "precio": 10000,
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi, est accusantium quidem ut, quisquam praesentium quibusdam culpa fugiat possimus consectetur hic mollitia perferendis, vero inventore cumque! Voluptatem, animi veritatis!"
+    }
+]
