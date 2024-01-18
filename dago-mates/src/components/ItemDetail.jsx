@@ -1,20 +1,22 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Boton from "../components/boton";
 import SelectorCantidad from "./SelectorCantidad";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { CarritoContext } from "../../context/CarritoContext";
 
 
 const ItemDetail = ({ item }) => {
-    const [cantidad, setCantidad] = useState(1)
     const navigate = useNavigate()
+    const [cantidad, setCantidad] = useState(1)
+    const { agregarAlCarrito, enCarrito } = useContext(CarritoContext)
 
     const handleAgregar = () => {
-        const itemToCart = {
+        const itemCarrito = {
             ...item,
             cantidad,
         }
 
-        console.log(itemToCart)
+        agregarAlCarrito(itemCarrito)
     }
 
     const handleVolver = () => {
@@ -35,13 +37,19 @@ const ItemDetail = ({ item }) => {
 
                 <div>
                     <p>Precio: ${item.precio}</p>
-
-                    <SelectorCantidad
+                    {
+                        enCarrito(item.id)
+                        ? <Boton><Link to='/carrito'>Terminar mi compra</Link></Boton>
+                        : <>
+                        <SelectorCantidad
                         cantidad={cantidad}
                         setCantidad={setCantidad}
-                    />
+                        />
 
-                    <Boton onClick={handleAgregar}>Agregar al carrito</Boton>
+                        <Boton onClick={handleAgregar}>Agregar al carrito</Boton>
+                        </>
+                    }
+                    
                 </div>
             </div>
         </div>

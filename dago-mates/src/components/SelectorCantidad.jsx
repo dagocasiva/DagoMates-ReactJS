@@ -1,9 +1,9 @@
 import Boton from "./boton";
 
-const SelectorCantidad = ({ cantidad, stock, setCantidad }) => {
+const SelectorCantidad = ({ cantidad,setCantidad }) => {
 
     const handleSumar = () => {
-        cantidad < stock && setCantidad(cantidad + 1)
+        cantidad && setCantidad(cantidad + 1)
     }
 
     const handleRestar = () => {

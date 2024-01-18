@@ -1,8 +1,17 @@
-const CartWidget = () => {
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CarritoContext} from '../../context/CarritoContext'
 
+
+
+const CartWidget = () => {
+    const {itemsEnCarrito} = useContext(CarritoContext)
     return (
-        <a className="enlace" href="#"><span className="material-symbols-outlined">shopping_cart</span><p>1</p></a>
-        
+        <Link to='carrito' className='enlace'>
+            <span>{itemsEnCarrito()}</span>
+            <span className="material-symbols-outlined">shopping_cart</span>
+        </Link>
+    
     )
 }
 
