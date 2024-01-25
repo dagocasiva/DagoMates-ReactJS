@@ -1,0 +1,37 @@
+.divFormulario{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    h4{
+        margin: 1%;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+        .input{
+            width: 20vw;
+            margin: 0.5%;
+            padding: 0.5%;
+            border: 1px black solid;
+            border-radius: 5%;
+            text-decoration: wavy;
+        }
+    }
+}
+
+
+.orden{
+    display: flex;
+    flex-direction: column;
+    p{
+        margin: 1%;
+        color: black;
+        font-weight: 600;
+        span{
+            color: white;
+        }
+    }
+}

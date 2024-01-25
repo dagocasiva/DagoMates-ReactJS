@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { CarritoProvider } from "../context/CarritoContext";
 import Carrito from './components/Carrito';
 import Checkout from './components/Checkout';
-
+import { ToastContainer, toast } from 'react-toastify';
 function App() {
   
   return (
@@ -24,7 +24,7 @@ function App() {
         </Routes>
     
     </BrowserRouter>
-
+    <ToastContainer/>
     </CarritoProvider>
   )
 }
